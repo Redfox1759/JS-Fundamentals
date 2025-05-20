@@ -4,10 +4,6 @@ const messages = [
   "JavaScript is amazing"
 ];
 
-let finalOutput = '';
-
-for (let i = 0; i < messages.length; i++) {
-  finalOutput += messages[i] + '\n';
+for( let i = 0; i < messages.length; i++){
+    console.log(messages[i])
 }
-
-console.log(finalOutput);
