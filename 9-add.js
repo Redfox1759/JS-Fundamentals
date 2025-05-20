@@ -4,3 +4,4 @@ const b = args[1]
 function add(a, b) {
   console.log(a + b);
 }
+add(a,b)
