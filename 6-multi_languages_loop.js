@@ -3,7 +3,6 @@ const messages = [
   "Python is cool",
   "JavaScript is amazing"
 ];
-
-for( let i = 0; i < messages.length; i++){
+for ( let i = 0; i < messages.length; i++){
     console.log(messages[i])
 }
