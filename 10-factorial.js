@@ -10,4 +10,4 @@ const firstArg = process.argv[2];
 
 const numberToFactorial = parseInt(firstArg, 10);
 
-console.log(factorial(numberToFactorial));
+factorial(numberToFactorial);
