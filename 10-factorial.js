@@ -1,3 +1,8 @@
+const args = process.argv[0].slice(2);
+
+const numberToFactorial = parseInt(args[0], 10);
+
+
 function factorial(n) {
   if (isNaN(n)) {
     console.log(1);
@@ -5,9 +10,5 @@ function factorial(n) {
         console.log(n * factorial(n - 1));
     }   
 }
-
-const firstArg = process.argv[2];
-
-const numberToFactorial = parseInt(firstArg, 10);
 
 factorial(numberToFactorial);
