@@ -1,14 +1,11 @@
-const args = process.argv[0].slice(2);
+const num = parseInt(process.argv[2]);
 
-const numberToFactorial = parseInt(args[0], 10);
-
-
+// Recursive function to compute factorial
 function factorial(n) {
-  if (isNaN(n)) {
-    console.log(1);
-    } else{
-        console.log(n * factorial(n - 1));
-    }   
+  if (isNaN(n) || n < 0) return 1; // Factorial of NaN or negative is 1
+  if (n === 0) return 1;
+  return n * factorial(n - 1);
 }
 
-factorial(numberToFactorial);
+// Print the result
+console.log(factorial(num));
