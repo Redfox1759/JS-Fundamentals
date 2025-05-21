@@ -1,8 +1,8 @@
 function factorial(n) {
   if (isNaN(n)) {
-    return 1;
+    console.log(1);
     } else{
-        n * factorial(n - 1);
+        console.log(n * factorial(n - 1));
     }   
 }
 
